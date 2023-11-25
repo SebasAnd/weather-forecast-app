@@ -1,0 +1,68 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.mainContainer{
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+   
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.headerDetail{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    font-size: 1rem;
+}
+.headerContent{
+    justify-content: center;
+    width: 60%;
+    padding: 10px;
+    height: auto;
+    font-size: 300%;
+}
+
+.headerImg{
+    width: 50%;
+    height: auto;
+}
+.headerInfo{
+    border: 5px solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.chart{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height:50%;
+    color: white;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+    border-color: white;
+}
+
+.infoTable{
+    display: flex;
+    width: 100%;
+    overflow-x:auto;
+}
+table{
+    border: 2px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+thead th {
+  width: 100%;
+}

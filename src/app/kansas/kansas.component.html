@@ -1,0 +1,50 @@
+<div  class="mainContainer">
+    <div class="headercontent" *ngIf="this.elements">
+        
+        <div class="headerContent" >
+             Kansas Forecast
+        </div>
+        <div class="headerDetail" >
+            <mat-icon  style="color: white;" class="mat-icon-rtl-mirror" fontIcon="cloud"></mat-icon>  {{this.elements['properties']['periods'][0]['detailedForecast']}}
+        </div>
+    
+    </div>
+    <div class="chart">
+        <canvas id="ColumbiaChart" width="400" height="400"></canvas>
+    </div>
+
+    <div class="infoTable">
+        <table *ngIf="this.elements">
+            <thead></thead>
+            <tr >
+                <th></th>
+                <th>Time</th>
+                <th>Forecast</th>
+                <th>Temperature</th>
+                <th>Wind Speed</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            </tr>
+            <tbody >
+                <tr *ngFor="let item of this.elements['properties']['periods']">
+
+                    <td><img style="width: 100%;" src="{{item['icon']}}"></td>
+                    <td>{{item['name']}}</td>
+                    <td>{{item['shortForecast']}}</td>
+                    <td>{{ item['temperature'] }}° {{item['temperatureUnit']}}</td>
+                    <td>{{item['windSpeed'] }} {{item['windDirection'] }} </td>
+                    <td>{{item['startTime']| date:'short' }} </td>
+                    <td>{{item['endTime']| date:'short' }} </td>
+                    
+                </tr>
+            
+            </tbody>
+        </table>
+
+    </div>
+    
+
+    
+
+</div>
+
