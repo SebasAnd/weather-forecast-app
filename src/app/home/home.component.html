@@ -1,4 +1,28 @@
 <div class="mainContainer">
-    <button routerLink="/Columbia">Columbia Forecast</button>
-    <button routerLink="/Kansas">Kansas Forecast</button>
+    <table class="infoTable">
+        <thead>
+            <tr>
+                <th style="width: 10%;"></th>
+                <th>Forecast</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 10%;"><mat-icon  style="color: white;" class="mat-icon-rtl-mirror" fontIcon="cloud"></mat-icon></td>
+                <td>
+                    <a routerLink="/Columbia">District of Columbia Forecast ( LWX )</a>
+                </td>           
+
+            </tr>
+            <tr>
+                <td style="width: 10%;"><mat-icon  style="color: white;" class="mat-icon-rtl-mirror" fontIcon="cloud"></mat-icon></td>
+                <td>
+                    <a routerLink="/Kansas">Kansas Forecast ( TOP )</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!--<button routerLink="/Columbia">Columbia Forecast</button>
+    <button routerLink="/Kansas">Kansas Forecast</button>-->
 </div>

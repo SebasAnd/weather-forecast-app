@@ -20,3 +20,24 @@ button{
     cursor: pointer;
     border-radius:12px;
 }
+
+
+table{
+  border: 2px solid #ccc;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+width: 100%;
+table-layout:inherit;
+background-color: black;
+}
+thead th {
+width: 100%;
+}
+
+th, td {
+	border: 1px solid white;
+	padding: 10px;
+  width: 90%;
+
+}
